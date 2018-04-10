@@ -13,6 +13,7 @@ schematics .:comp --name=test --dry-run=false --force
 ### Link
 
 ```
+cd ..
 npm link custom-angular
 ```
 
