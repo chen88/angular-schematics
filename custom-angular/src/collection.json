@@ -41,6 +41,11 @@
       "description": "Custom Angular Comp",
       "factory": "./comp",
       "schema": "./comp/schema.json"
+    },
+    "service": {
+      "description": "Custom Angular Service",
+      "factory": "./service",
+      "schema": "./service/schema.json"
     }
   }
 }
