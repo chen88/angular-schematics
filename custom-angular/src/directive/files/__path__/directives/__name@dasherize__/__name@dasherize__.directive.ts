@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core'
 
 @Directive({
-  selector: '[<%= name %>Dir]'
+  selector: '[<%= camelize(name) %>Dir]'
 })
 export class <%= classify(name) %>Directive {
   constructor () {}
