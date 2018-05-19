@@ -1,19 +1,19 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "SchematicCustomAngularService",
-  "title": "Angular Custom Service Options Schema",
+  "id": "SchematicCustomAngularDirective",
+  "title": "Angular Custom Directive Options Schema",
   "type": "object",
   "properties": {
     "location": {
       "type": "string",
       "format": "path",
-      "description": "The path to create the service.",
+      "description": "The path to create the directive.",
       "default": "src/app",
       "visible": false
     },
     "name": {
       "type": "string",
-      "description": "Name of service",
+      "description": "Name of directive",
       "$default": {
         "$source": "argv",
         "index": 0

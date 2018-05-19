@@ -46,6 +46,11 @@
       "description": "Custom Angular Service",
       "factory": "./service",
       "schema": "./service/schema.json"
+    },
+    "directive": {
+      "description": "Custom Angular Directive",
+      "factory": "./directive",
+      "schema": "./directive/schema.json"
     }
   }
 }

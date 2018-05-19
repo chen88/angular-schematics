@@ -7,7 +7,15 @@ npm run build
 ### Run Test
 
 ```
+// comp
 schematics .:comp --name=test --dry-run=false --force
+
+// directive 
+schematics .:directive --name=test --dry-run=false --force
+
+// service
+schematics .:service --name=test --dry-run=false --force
+
 ```
 
 ### Link
