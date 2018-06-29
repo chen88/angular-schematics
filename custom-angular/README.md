@@ -1,3 +1,10 @@
+### Angular 6
+
+```
+// include pug loader
+ng add ng-cli-pug-loader
+```
+
 ### Build
 
 ```
