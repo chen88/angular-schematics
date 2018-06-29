@@ -11,7 +11,7 @@ import { camelize } from "@angular-devkit/core/src/utils/strings"
 import { Schema } from "./schema";
 
 export default function (options: Schema): Rule {
-  return chain([
+  const rules: Rule[] = [
     (t: Tree, c: SchematicContext) => {
       // options.classify = classify
       // options.dasherize = dasherize
@@ -29,5 +29,19 @@ export default function (options: Schema): Rule {
         name: options.name
       }))
     ]))
-  ])
+  ]
+  if (options.test) {
+    rules.push(
+      mergeWith(apply(url('./test-files'), [
+        template(Object.assign({
+          classify,
+          dasherize,
+          camelize,
+          path: options.location,
+          name: options.name
+        }))
+      ]))
+    )
+  }
+  return chain(rules)
 }

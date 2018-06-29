@@ -16,6 +16,9 @@ schematics .:directive --name=test --dry-run=false --force
 // service
 schematics .:service --name=test --dry-run=false --force
 
+// if you want to skip test files, use the above command with
+--no-test
+
 ```
 
 ### Link

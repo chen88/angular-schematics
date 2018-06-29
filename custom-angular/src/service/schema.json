@@ -18,6 +18,11 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "test": {
+      "type": "boolean",
+      "description": "Generate test files",
+      "default": true
     }
   },
   "required": [
