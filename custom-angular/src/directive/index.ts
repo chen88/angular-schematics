@@ -25,7 +25,7 @@ export default function (options: Schema): Rule {
         classify,
         dasherize,
         camelize,
-        path: options.location,
+        path: options.path,
         name: options.name
       }))
     ]))
@@ -37,7 +37,7 @@ export default function (options: Schema): Rule {
           classify,
           dasherize,
           camelize,
-          path: options.location,
+          path: options.path,
           name: options.name
         }))
       ]))
