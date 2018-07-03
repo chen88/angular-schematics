@@ -3,7 +3,7 @@ import { <%= classify(name) %>Service } from './<%= dasherize(name) %>.service'
 
 @Component({
   selector: '<%= dasherize(name) %>',
-  template: './<%= dasherize(name) %>.component.pug',
+  templateUrl: './<%= dasherize(name) %>.component.pug',
   styleUrls: ['./<%= dasherize(name) %>.component.scss'],
 })
 export class <%= classify(name) %>Component implements OnInit {
